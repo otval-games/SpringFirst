@@ -13,12 +13,10 @@ public class APIController {
     @PostMapping("/sendToSvr")
     public void sendToSvr(){
         num = (int) (Math.random() * 100);
-        System.out.println("post");
     }
 
     @GetMapping("/returnFromSvr")
     public int returnFromSvr(){
-        System.out.println("send");
         return num;
     }
 }
